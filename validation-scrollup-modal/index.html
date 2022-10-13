@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>12_browser-events</title>
+</head>
+<body>
+  <section class="section section-modal">
+    <button id="open-modal-btn" type="button" class="button js-open-modal" data-target="modal">Open modal</button>
+    <!-- Modal -->
+    <div class="modal" id="modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">what happened</h5>
+          </div>
+          <div class="modal-body">
+            я родился!!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-input">
+    <form id="form" class="form">
+      <label class="label">
+        <input type="text" placeholder="name" class="input name">
+      </label>
+      <label class="label">
+        <input type="text" placeholder="surname" class="input surname">
+      </label>
+      <label class="label">
+        <input type="text" placeholder="patronymic" class="input patronymic">
+      </label>
+      <button id="submit-form" type="submit" class="form__button">Submit</button>
+    </form>
+  </section>
+  <section class="section section-gallery">
+    <ul class="list list-reset">
+      <li class="list__item">
+        <img src="img/startLord.jpg" alt="guardians of the galaxy picture">
+      </li>
+      <li class="list__item">
+        <img src="img/gamora.jpg" alt="guardians of the galaxy picture">
+      </li>
+      <li class="list__item">
+        <img src="img/groot.jpg" alt="guardians of the galaxy picture">
+      </li>
+      <li class="list__item">
+        <img src="img/rocket.jpg" alt="guardians of the galaxy picture">
+      </li>
+      <li class="list__item">
+        <img src="img/thanos.jpg" alt="guardians of the galaxy picture">
+      </li>
+      <li class="list__item">
+        <img src="img/mantis.jpg" alt="guardians of the galaxy picture">
+      </li>
+    </ul>
+    <p class="guardians-text">
+      Guardians of the Galaxy Vol. 2 is a 2017 American superhero film based on the Marvel Comics superhero team Guardians of the Galaxy, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to Guardians of the Galaxy (2014) and the 15th film in the Marvel Cinematic Universe (MCU). Written and directed by James Gunn, the film stars an ensemble cast featuring Chris Pratt, Zoe Saldaña, Dave Bautista, Vin Diesel, Bradley Cooper, Michael Rooker, Karen Gillan, Pom Klementieff, Elizabeth Debicki, Chris Sullivan, Sean Gunn, Sylvester Stallone, and Kurt Russell. In Guardians of the Galaxy Vol. 2, the Guardians travel throughout the cosmos as they help Peter Quill learn more about his mysterious parentage.
+      The film was officially announced at the 2014 San Diego Comic-Con International before the theatrical release of the first film, along with James Gunn's return from the first film, with the title of the sequel revealed a year later in June 2015. Principal photography began in February 2016 at Pinewood Atlanta Studios in Fayette County, Georgia, with many crew changes from the first film due to other commitments. Filming concluded in June 2016. James Gunn chose to set the sequel shortly after the first film to explore the characters' new roles as the Guardians, and to follow the storyline of Quill's father established throughout that previous film. Russell was confirmed as Quill's father in July 2016, portraying Ego, a departure from Quill's comic father.
+    </p>
+    <button id="scroll-up" type="button" class="scroll-btn button">scroll up</button>
+  </section>
+</body>
+</html>

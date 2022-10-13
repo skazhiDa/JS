@@ -1,0 +1,166 @@
+/*glob*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 320px;
+  background-color: #f9f7fc;
+  font-family: 'Aboreto', cursive;
+}
+img {
+  max-width: 100%;
+}
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+button:focus {
+  outline:none;
+}
+.flex {
+  display: flex;
+}
+
+/*styles*/
+.choose {
+  padding: 50px 50px 15px 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.choose__list {
+  margin: 10px 0;
+}
+
+.choose__text {
+  margin-right: 10px;
+}
+
+.radio__item input[type=radio] {
+  display: none;
+}
+
+.radio__point, .radio__item, .radio__label {
+  cursor: pointer;
+}
+
+.radio__item {
+  border: 1px solid #9D5CD0;
+  border-right: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.radio__label {
+  padding: 4px 15px;
+  line-height: 26px;
+}
+
+.radio__item:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.radio__item:last-child {
+  border-right: 1px solid #9D5CD0;
+  border-radius: 0 6px 6px 0;
+  margin-right: 10px;
+}
+
+.radio__point {
+  margin: 0;
+}
+
+.radio__point:checked + .radio__label {
+  background: #d9cffc;
+}
+
+.choose__button {
+  background-color: #D1A9F0;
+  border: none;
+  border-radius: 6px;
+  padding: 2px 4px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timer__text {
+  margin: 0 5px 0;
+}
+
+.cardWrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*outline: 1px solid #a8a7fc;*/
+}
+
+.game-field {
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+
+.card, .cardBack {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: transform .6s linear;
+}
+
+.card {
+  transform: perspective(600px) rotateY(0deg);
+  background-color: #c1c0fa;
+}
+
+.cardBack {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #a8a7fc;
+}
+
+.game-field__congrats, .game-field__time-out {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 20px;
+  top: 30%;
+  right: 20%;
+  bottom: 20%;
+  left: 30%;
+  color: #fff;
+  padding: 3%;
+  transform: translateY(-200%);
+  transition: transform .4s ease-in-out;
+  background-color: rgba(59, 49, 110, .97);
+  z-index: 1;
+}

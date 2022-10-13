@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Let's play</title>
+  <script defer src="cardGame.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="choose flex">
+    <span class="choose__text">the size of the playing field:</span>
+    <ul class="choose__list radio list-reset flex">
+      <li class="radio__item">
+        <input class="radio__point" type="radio" name="size" id="2" value="2">
+        <label class="radio__label" for="2">2 / 2</label>
+      </li>
+      <li class="radio__item">
+        <input class="radio__point" type="radio" name="size" id="4" value="4" checked>
+        <label class="radio__label" for="4">4 / 4</label>
+      </li>
+      <li class="radio__item">
+        <input class="radio__point" type="radio" name="size" id="6" value="6">
+        <label class="radio__label" for="6">6 / 6</label>
+      </li>
+      <li class="radio__item">
+        <input class="radio__point" type="radio" name="size" id="8" value="8">
+        <label class="radio__label" for="8">8 / 8</label>
+      </li>
+      <li class="radio__item">
+        <input class="radio__point" type="radio" name="size" id="10" value="10">
+        <label class="radio__label" for="10">10 / 10</label>
+      </li>
+    </ul>
+    <button class="choose__button" id="radio-button">submit</button>
+  </div>
+  <div class="timer">
+    <p class="timer__text">you have this much time left:</p>
+    <span class="timer__value" id="timer__value">6</span>
+  </div>
+  <div class="game-field flex" id="game-field"></div>
+</body>
+</html>

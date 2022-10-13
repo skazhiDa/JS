@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <script defer src='dependencies/modal.js'></script>
+  <script defer src='script.js'></script>
+  <link rel="stylesheet" href="dependencies/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button class="modal-btn" data-path="first" data-animation="fade" data-speed="200">add</button>
+    <div class="filter">
+      <span class="filter__text">filters:</span>
+      <label class="filter__name">
+        <input id="filter__name" type="text" placeholder="name">
+      </label>
+      <label class="filter__faculty">
+        <input id="filter__faculty" type="text" placeholder="faculty">
+      </label>
+      <label class="filter__start-year">
+        <input id="filter__start-year" type="text" placeholder="start year">
+      </label>
+      <label class="filter__grad-year">
+        <input id="filter__grad-year" type="text" placeholder="graduating year">
+      </label>
+    </div>
+    <div class="modal-table">
+      <div class="modal__container-table" data-target="first">
+        <button class="modal-close-table modal-btn"></button>
+        <div class="modal-content-table">
+          <form class="modal__form" id="form">
+            <label id="label-name" class="form-label">
+              <span id="required-name" class="warning">the field is required</span>
+              <input class="form-input" id="name" type="text" placeholder="full name">
+            </label>
+            <label id="label-start" class="form-label">
+              <span id="required-start" class="warning">the field is required</span>
+              <span id="min-start" class="warning">Start year can not be lower than 2000</span>
+              <span id="max-start" class="warning">Start year can not be more than current date</span>
+              <input class="form-input" id="start-year" type="number" min="2000" max="2022" placeholder="start year">
+            </label>
+            <label id="label-birth" class="form-label">
+              <span id="required-birth" class="warning">the field is required</span>
+              <span id="min-birth" class="warning">Birth year can not be lower than 1900</span>
+              <span id="max-birth" class="warning">Birth year can not be more than current year</span>
+              <input class="form-input" id="birthday" type="date" placeholder="birthday">
+            </label>
+            <label id="label-faculty" class="form-label">
+              <span id="required-faculty" class="warning">the field is required</span>
+              <input class="form-input" id="faculty" type="text" placeholder="faculty">
+            </label>
+            <button class="modal-btn form-submit" id="form-submit" type="submit">submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th class="clickable" id="headName" scope="col">Name</th>
+        <th class="clickable" id="headBirth" scope="col">Birthday</th>
+        <th class="clickable" id="headStart" scope="col">Start Year</th>
+        <th class="clickable" id="headFaculty" scope="col">Faculty</th>
+      </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+
+  </div>
+</body>
+</html>

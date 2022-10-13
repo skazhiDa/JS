@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 200px;
+  margin: 25px auto;
+}
+
+#container-table {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #fcf0f2;
+}
+
+button {
+  border: 3px solid mediumpurple;
+  border-radius: 40px;
+  width: 60px;
+  height: 45px;
+  background-color: white;
+  color: mediumpurple;
+  transition: background-color .4s ease-in-out, color .4s ease-in-out;
+  padding-bottom: 4px;
+}
+
+button:active, button:focus {
+  background-color: mediumpurple;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+button:active {
+  background-color: darkviolet;
+  outline: none;
+}
+
+.link {
+  text-decoration: none;
+  color: rebeccapurple;
+}
+
+.comment-container {
+  outline: 1px solid mediumpurple;
+}
